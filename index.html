@@ -3,18 +3,32 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Joke</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Random quote machine</title>
     <link rel="Shortcut icon" href="https://img.icons8.com/doodle/50/000000/boy.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
   </head>
   <body>
-    <img src="https://proteviblog.typepad.com/.a/6a00d8341ef41d53ef015434428c5b970c-800wi">
-    <br>
-    <button id="get-joke">Random joke</button>
-    <div id="jokes">
-      <h1>Click button to get some joke!</h1>
-      <p id="joke"></p>
+  <main>
+    <header>
+        <h1>Random quote machine</h1>
+    </header>
+    <div class="box">
+        <h2 class="quote"></h2>
+        <h3 class="author"></h3>
     </div>
-    <script type="text/javascript" src="script.js"></script> 
-  </body>
+    <div>
+        <button class="trigger btn btn-info btn-lg"> Random quote </button>
+        <br>
+        <a href="#" target="_blank" class="tweet btn btn-info btn-lg" role="button"><i class="fa fa-lg fa-twitter"></i> Tweet</a>
+    </div>
+  </main>
+    <script type="text/javascript" src="script.js"></script>
+</body>
 </html>
